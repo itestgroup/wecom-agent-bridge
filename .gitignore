@@ -1,0 +1,21 @@
+node_modules/
+.wrangler/
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+*.log
+*.zip
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local deployment targets and durable agent state
+wrangler.json
+*.sqlite3
+*.sqlite3-*
+*.part
+*.wecom.json
+*.expired.json
+*.download.lock

@@ -1,0 +1,19 @@
+{
+  "name": "wecom-agent-bridge",
+  "version": "0.1.0-dev",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted WeCom messaging bridge for AI agents",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node test.mjs",
+    "deploy": "python scripts/configure_worker.py --check && wrangler deploy",
+    "build:check": "wrangler deploy --config wrangler.example.json --dry-run --outdir .wrangler/build-check"
+  },
+  "devDependencies": {
+    "wrangler": "4.149.0"
+  },
+  "license": "Apache-2.0"
+}

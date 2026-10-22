@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "wecom-agent-bridge",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-08-03",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "keep_vars": true,
+  "workers_dev": false,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "wecom-agent-bridge",
+      "database_id": "REPLACE_WITH_YOUR_TEST_D1_ID"
+    }
+  ]
+}
